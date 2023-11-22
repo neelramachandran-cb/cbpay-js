@@ -29,6 +29,8 @@ type BaseOnRampAppParams = {
   handlingRequestedUrls?: boolean;
   /** ID used to link all user transactions created during the session. */
   partnerUserId?: string;
+  connectedWalletName?: string;
+  connectedWalletImage?: string;
 };
 
 export type OnRampAggregatorAppParams = {

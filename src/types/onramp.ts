@@ -11,6 +11,8 @@ export type DestinationWallet = {
 
 export type OnRampExperience = 'buy' | 'send';
 
+export type Theme = 'light' | 'dark';
+
 type BaseOnRampAppParams = {
   /** The destination wallets supported by your application (BTC, ETH, etc). */
   destinationWallets: DestinationWallet[];
@@ -29,6 +31,7 @@ type BaseOnRampAppParams = {
   handlingRequestedUrls?: boolean;
   /** ID used to link all user transactions created during the session. */
   partnerUserId?: string;
+  theme?: Theme;
 };
 
 export type OnRampAggregatorAppParams = {
